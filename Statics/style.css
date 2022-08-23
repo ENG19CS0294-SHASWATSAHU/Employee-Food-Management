@@ -1,0 +1,84 @@
+body {
+  background-image: url("./Images/pexels-daria-shevtsova-704971.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  margin: 0px;
+  padding: 0px;
+}
+/* nav bar start */
+a {
+    text-decoration: none;
+  }
+nav {
+    display: flex;
+    z-index: 1;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    background-color: #ffffff;
+    box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2);
+    padding: 0px 5%;
+    border-radius: 10px;
+  }
+  nav ul {
+    display: flex;
+    position: relative;
+    list-style-type: none;
+  }
+  .toggle {
+    display: none;
+  }
+  
+  nav ul li a {
+    width: 100%;
+    margin: 30px;
+    font-family: myriad pro regular;
+    color: #505050;
+    font-size: 15px;
+    font-weight: 700;
+  }
+  nav ul li a:hover {
+    margin: 30px;
+    font-family: myriad pro regular;
+    color: #ff0000;
+    font-size: 15px;
+    font-weight: 700;
+  }
+  .sticky {
+    top: 0;
+    z-index: 100;
+    position: fixed;
+    width: 100%;
+  }
+  .logo {
+    font-family: RoadTest;
+    color: #000000;
+    font-size: 22px;
+  }
+  .logo b {
+    font-family: RoadTest;
+    color: #ff0000;
+    font-size: 22px;
+  }
+  .active {
+    color: #2d2a2a;
+    font-weight: bold;
+  }
+  /* nav bar ends */
+  #myBtn {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 20px; /* Place the button at the bottom of the page */
+    right: 30px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    background: none;
+    text-shadow: -1px 3px 1px gray !important;
+    outline: none; /* Remove outline */
+    color: #122112; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 15px; /* Some padding */
+    border-radius: 10px; /* Rounded corners */
+    font-size: 18px; /* Increase font size */
+  }
