@@ -6,38 +6,33 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./Statics/style.css">
+    <script src="https://kit.fontawesome.com/b4a182c864.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="">
     <title>Document</title>
 </head>
 
 <body>
     <!--navigation------------------------->
-    <nav id='navbar'>
-        <!--logo-->
-        <div onclick="window.open('./#','_self')" class="logo" alt='home' title="Home">KALEYRA<b>.</b>IO</div>
-        <!--menu-->
-        <ul>
-            <li><a href="./#about" onclick="toggle_close()">About</a></li>
-            <li><a href="./#project" onclick="toggle_close()">Menu</a></li>
-            <li><a href="./#contact" onclick="toggle_close()">Contact</a></li>
-            <li><a href="./#contact" onclick="toggle_close()">Login</a></li>
-            
-            <span></span>
+    <section class="section">
+        <!--navigation------------------------->
+        <nav id='navbar'>
+            <!--logo-->
+            <div onclick="window.open('./#','_self')" class="logo" alt='home' title="Home">KALEYRA<b>.</b><b>IO</b></div>
+            <!--menu-->
+            <ul >
+                <li class="zoom"><a href="./#about" onclick="toggle_close()">About</a></li>
+                <li class="zoom"><a href="./#project" onclick="toggle_close()">Menu</a></li>
+                <li class="zoom"><a href="./#contact" onclick="toggle_close()">Contact</a></li>
+                <!-- <li class="zoom"><a href="/gallery" onclick="toggle_close()">Gallery</a></li> -->
+                <li><a href="/resume" onclick="toggle_close()"> <button><i class="fa-solid fa-user"></i>&nbsp; Login</button></a></li>
+                <span></span>
 
-        </ul>
-        <!--bars--------------->
-        <div class="toggle"></div>
-    </nav>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-
+            </ul>
+            <!--bars--------------->
+            <div class="toggle"></div>
+        </nav>
+    </section>
 </body>
 
 </html>
