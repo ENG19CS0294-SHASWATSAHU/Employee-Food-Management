@@ -15,8 +15,8 @@ a {
 }
 .section {
   width: 100%;
-  height: 98vh;
-  background-color: transparent;
+  height: 100vh;
+  background-image: linear-gradient(315deg, #1fd1f9a3 0%, #b621fe 74%);
   background-size: cover;
   background-repeat: no-repeat;
   border-radius: 15px;
@@ -61,12 +61,13 @@ nav ul li a {
   transform: scale(1.2);
   transition: transform 0.2s ease;
   border-top: 2px solid #2d2a2a;
+  border-radius: 5px;
   border-bottom: 2px solid #2d2a2a;
 }
 nav ul li a:hover {
   margin: 30px;
   font-family: RoadTest;
-  color: #757500;
+  color: #b621fe;
   font-size: 15px;
   font-weight: 700;
 }
@@ -82,7 +83,7 @@ nav ul li button {
   border-radius: 4px;
 }
 nav ul li button:hover {
-  color: #757500;
+  color: #b621fe;
   background-color: transparent;
 }
 .sticky {
@@ -99,7 +100,7 @@ nav ul li button:hover {
 }
 .logo b {
   font-family: RoadTest;
-  color: #757500;
+  color: #ab0cfb;
   font-size: 22px;
 }
 .active {
@@ -107,16 +108,25 @@ nav ul li button:hover {
   font-weight: bold;
 }
 /* nav bar ends */
-.wrapper {
-  height: -moz-calc(100% - (60px));
-  height: -webkit-calc(100% - (60px));
-  height: calc(100% - (60px));
+.wrapper-vertical{
+  /* background-color: red; */
+  height: -moz-calc(100% - (60px+60px));
+  height: -webkit-calc(100% - (60px+60px));
+  height: calc(100% - (60px+60px));
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   border-radius: 8px;
 }
+.wrapper-horizontal{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  border-radius: 8px;
+}
 .container {
+  background-color: green;
   display: inline-block;
   background-color: transparent;
 }
@@ -125,12 +135,12 @@ nav ul li button:hover {
   color: white;
 }
 .salute b{
-  color: wheat
+  color: #1fd1f9
 }
 .typed-out {
   overflow: hidden;
   color: whitesmoke;
-  border-right: 0.15em solid #757500;
+  border-right: 0.15em solid #55007f;
   white-space: nowrap;
   animation: typing 3s forwards;
   font-size: 80px;
@@ -144,8 +154,143 @@ nav ul li button:hover {
     width: 100%;
   }
 }
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto;
+  background-color:  rgba(60, 60, 60, 0.832);
+  padding: 20px;
+}
 
-@media (max-width: 750px) {
+.grid-item {
+  background-image: linear-gradient(315deg, #525050be 0%, #ffffffbe 74%);
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  margin: 3px;
+  padding: 15px;
+  font-size: 1.5em;
+  /* text-align: center; */
+  display: flex;
+  border-radius: 5px;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+}
+.grid-item img{
+  height: 90px;
+  width: 90px;
+  background-color: red;
+}
+.grid-item div{
+  width: 500px;
+  font-family: RoadTest;
+  color: rgb(0, 0, 0);
+  /* background-color: rgb(0, 255, 0); */
+}
+.grid-item h5{
+  left:0;
+  font-size: 1em;
+  padding-left: 15px;
+  
+}
+.grid-item h5 i{
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 0.65em;
+  font-style: normal;
+  font-weight: bold;
+}
+
+
+.btn-grid{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.third{
+  height: 35px;
+  width: 70px;
+  font-size: 0.7em ;
+  font-weight: bold;
+  font-family: RoadTest;
+  color: whitesmoke;
+  border-radius: 5px;
+  background-color: #121212;
+}
+ .third:hover{
+  background-color: whitesmoke;
+  color: black;
+ }
+
+ /* <!-- HTML !--> */
+
+
+/* CSS */
+.button-64 {
+  align-items: center ;
+  background-image: linear-gradient(144deg,#9400fd, #2000f3 50%,#00DDEB);
+  border: 0;
+  border-radius: 8px;
+  box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  display: flex;
+  font-family: Phantomsans, sans-serif;
+  font-size: 20px;
+  justify-content: center;
+  line-height: 1em;
+  max-width: 100%;
+  min-width: 140px;
+  padding: 3px;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.button-64:active,
+.button-64:hover {
+  outline: 0;
+}
+
+.button-64 span {
+  background-color: rgb(0, 0, 7);
+  padding: 10px 24px;
+  border-radius: 6px;
+  width: 100%;
+  height: 100%;
+  transition: 300ms;
+}
+
+.button-64:hover span {
+  background: none;
+}
+
+@media (min-width: 768px) {
+  .button-64 {
+    font-size: 24px;
+    min-width: 196px;
+  }
+}
+
+@media (max-width: 850px) {
+  .salute {
+    font-size: 70px;
+    color: white;
+  }
+  .salute b{
+    font-size: 75px;
+    color: #1fd1f9a3
+  }
+  .typed-out {
+    overflow: hidden;
+    color: whitesmoke;
+    border-right: 0.15em solid linear-gradient(315deg, #1fd1f9 0%, #b621fe 74%);
+    white-space: nowrap;
+    animation: typing 3s forwards;
+    font-size: 60px;
+    width: 0;
+  }
   nav ul {
     margin: 0px;
     padding: 0px;

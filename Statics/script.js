@@ -1,10 +1,17 @@
-$(document).ready(function () {
-    $(".toggle").click(function () {
-      $(".toggle").toggleClass("active");
-      $("nav").toggleClass("active");
-    });
+$(document).ready(function() {
+  $('input[type="radio"]').click(function() {
+      var inputValue = $(this).attr("value");
+      var targetBox = $("." + inputValue);
+      $(".selectt").not(targetBox).hide();
+      $(targetBox).show();
   });
-  function toggle_close() {
-    $(".toggle").toggleClass("active");
-    $("nav").toggleClass("active");
+});
+
+function myFunction() {
+  var x = document.getElementById("breakfast");
+  if (x.style.display === "none") {
+    x.style.display = "grid";
+  } else {
+    x.style.display = "none";
   }
+}

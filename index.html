@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./Statics/style.css">
     <script src="https://kit.fontawesome.com/b4a182c864.js" crossorigin="anonymous"></script>
-
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
     <link rel="stylesheet" href="">
     <title>Document</title>
 </head>
@@ -25,7 +25,8 @@
                 <li class="zoom"><a href="./#about" onclick="toggle_close()">About</a></li>
                 <li class="zoom"><a href="./#project" onclick="toggle_close()">Menu</a></li>
                 <li class="zoom"><a href="./#contact" onclick="toggle_close()">Contact</a></li>
-                <li class="zoom"><a href="/resume" onclick="toggle_close()"> <button><i class="fa-solid fa-user"></i>&nbsp;
+                <li class="zoom"><a href="/resume" onclick="toggle_close()"> <button><i
+                                class="fa-solid fa-user"></i>&nbsp;
                             Login</button></a></li>
                 <span></span>
 
@@ -34,15 +35,92 @@
             <div class="toggle"></div>
         </nav>
 
+        <div class="wrapper-vertical">
+            <div class="wrapper-horizontal">
+                <p class="salute">Hello <b>User</b> &nbsp;</p>
+                <div class="container">
 
-        <div class="wrapper">
-            <p class="salute">Hello <b>User</b> &nbsp;</p>
-            <div class="container">
+                    <div class="typed-out">Bon Appétit</div>
+                </div>
+            </div>
+            <div class="wrapper-horizontal">
+                <button class="button-64" role="button"><span class="text" onclick="myFunction()">Breakfast</span></button>
+                <button class="button-64" role="button"><span class="text" onclick="myFunction()">Lunch </span></button>
 
-                <div class="typed-out">Bon Appétit</div>
+            </div>
+        </div>
+
+
+    </section>
+
+    <section class="menu">
+        <div id="breakfast" style="display: none;" class="breakfast grid-container">
+            <div class="grid-item"><img src="./Statics/Images/Breakfast/download (1).jpeg" alt="">
+                <div>
+                    <h5> Idli<br> <i> Idli is a fluffy, moon-like steamed south Indian rice cake.</i></h5>
+                </div> <button class="btn third">Order</button>
+            </div>
+            <div class="grid-item"><img src="./Statics/Images/Breakfast/images.jpeg" alt="">
+                <div>
+                    <h5> Omlette<br> <i> Wheat bread stuffed with spicy potato and toasted in butter.</i></h5>
+                </div> <button class="btn third">Order</button>
+            </div>
+            <div class="grid-item"><img src="./Statics/Images/Breakfast/download (2).jpeg" alt="">
+                <div>
+                    <h5> Dosa<br> <i> A dosa is a thin batter-based pancake originating from South India, made from a
+                            fermented batter predominantly consisting of lentils and rice.</i></h5>
+                </div> <button class="btn third">Order</button>
+            </div>
+            <div class="grid-item"><img src="./Statics/Images/Breakfast/download (3).jpeg" alt="">
+                <div>
+                    <h5> Lemon Tea <br> <i> Lemon Tea is a refreshing tea where lemon juice is added in black or green
+                            tea. It soothes the throat, prevents cough and congestion, and helps in weight loss.</i>
+                    </h5>
+                </div> <button class="btn third">Order</button>
+            </div>
+            <div class="grid-item"><img src="./Statics/Images/Breakfast/download (10).jpeg" alt="">
+                <div>
+                    <h5> Aloo Paratha<br> <i> Aloo paratha are popular Indian flatbreads stuffed with a delicious spiced
+                            potato mixture. In Hindi, Aloo means "Potatoes" and Paratha means "Layered Flatbreads".</i>
+                    </h5>
+                </div><button class="btn third">Order</button>
+            </div>
+            <div class="grid-item"><img src="./Statics/Images/Breakfast/download (11).jpeg" alt="">
+                <div>
+                    <h5> Poori Bhaji<br> <i> Puri bhaji (sometimes spelled poori bhaji) is a dish, originating from the
+                            Indian subcontinent, of deep-fried rounds of flour and potato bhaji.</i></h5>
+                </div> <button class="btn third">Order</button>
+            </div>
+            <div class="grid-item"><img src="./Statics/Images/Breakfast/download (9).jpeg" alt="">
+                <div>
+                    <h5>Upma<br> <i> Upma, uppumavu, or uppittu is a dish originating from the Indian subcontinent, most
+                            common in Kerala, Andhra Pradesh, Tamil Nadu, Telangana, Karnataka, Maharashtrian, and Sri
+                            Lanka.</i></h5>
+                </div> <button class="btn third">Order</button>
+            </div>
+            <div class="grid-item"><img src="./Statics/Images/Breakfast/images (1).jpeg" alt="">
+                <div>
+                    <h5> Egg Sandwich<br> <i> An egg sandwich is a sandwich with some kind of cooked egg filling. Fried
+                            eggs, scrambled eggs, sliced boiled eggs and egg salad (a mix of chopped cooked egg and
+                            mustard and mayonnaise) are popular options.</i></h5>
+                </div> <button class="btn third">Order</button>
+            </div>
+            <div class="grid-item"><img src="./Statics/Images/Breakfast/images (5).jpeg" alt="">
+                <div>
+                    <h5> Holige<br> <i> Obbattu, also referred to as Holige, is a sweet dish of Karnataka made during
+                            festivals and special events.</i></h5>
+                </div> <button class="btn third">Order</button>
+            </div>
+            <div class="grid-item"><img src="./Statics/Images/Breakfast/download.jpeg" alt="">
+                <div>
+                    <h5> Salad<br> <i>A cuisine is a style of cooking characterized by distinctive ingredients,
+                            techniques and dishes, and usually associated with a specific culture or geographic
+                            region.</i></h5>
+                </div> <button class="btn third">Order</button>
             </div>
         </div>
     </section>
+    <script src="./Statics/script.js"></script>
 </body>
 
 </html>
